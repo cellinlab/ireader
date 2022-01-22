@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i微信读书——最好用的微信读书插件</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script type="module" >
+        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        autoplay:true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+
+    </script>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+            --button-color:#28b7ff;
+        }
+        body{
+            background-color:#e9e9e9;
+            /* background: linear-gradient(to right, rgb(78, 84, 200), rgb(143, 148, 251)); */
+        }
+
+        
+        .download-btn{
+            margin:20px 30px;
+        }
+
+        .button{
+            text-decoration: none;
+            margin: 0px;
+            padding: 8px 26px;
+            display: block;
+            position: relative;
+            box-sizing: border-box;
+            width: auto;
+            height: 48px;
+            overflow: visible;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            line-height: 30px;
+            background: rgb(30, 128, 255);
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            white-space: pre-wrap;
+            word-break: break-all;
+            overflow-wrap: break-word;
+        }
+    </style>
+
+    <style>
+        header{
+            display: flex;
+            height:80px;
+            background-color:#fff;
+            /* justify-content: center; */
+            align-items: center;
+            padding:0 30px;
+            font-size: 24px;;
+        }
+        header img{
+            width:50px;
+            height:50px;
+            margin:0 10px;
+        }
+        section{
+            display: flex;
+            min-height:460px;
+            background: #fff;
+        }
+        .section-banner{
+            background-color:rgb(244, 245, 249);
+            height:460px;
+            
+            
+        }
+        .section-img{
+            display: block;
+            padding: 40px 0;
+        }
+        .section-flomo{
+            background-color:#fafafa;
+            padding: 20px 0;
+        }
+        .section-footer{
+            min-height:200px;
+        }
+        .section-banner .left{
+            width: 40%;
+            margin: 30px 40px;
+            
+        }
+        .section-banner .right{
+            background:#888;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="">
+        i 微信读书插件
+    </header>
+    <section class="section-banner">
+        <div class="left">
+            <style>
+                .title{
+                    font-size: 40px;
+                    line-height:2;
+                }
+                .info{
+                    font-size: 20px;
+                    line-height:2;
+                    margin:20px 0;
+                }
+                .button{
+                    margin-right:20px;
+                }
+                .download-box{
+                    display: flex;
+                    align-items: center;
+                }
+            </style>
+            <div class="title">
+                最好用的微信读书插件
+            </div>
+            <div class="info">
+                支持划线生成图片书签、划线同步笔记到第三方、
+                <br/>
+                一键导出笔记、更换主题等。
+            </div>
+            <div class="download-box">
+                <a target="_blank" href="https://chrome.google.com/webstore/detail/i%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6/feicgfcihlfhjjepgibmbieodedbggjh?hl=zh-CN" class="button">应用商店下载</a>
+                <a target="_blank" href="" class="button">下载安装包</a>
+            </div>
+        </div>
+        <div class="right">
+            <style>
+                .swiper {
+                    /* width: 600px; */
+                    height: 100%;
+                }
+                .swiper-slide{
+                    /* background-color:#fff; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .swiper-slide img{
+                    width: 100%;
+
+                }
+            </style>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    
+                    <div class="swiper-slide">
+                        <img src="./images/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/5.png" alt="">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-img">
+        <style>
+            .img-box{
+                display:flex;
+                justify-content:center;
+            }
+            .reader-img{
+                width: 300px;
+                box-shadow: rgb(17 17 26 / 5%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
+                margin: 30px 30px;
+            }
+            .section-img-title{
+                display:flex;
+                justify-content:center;
+                font-size: 36px;
+            }
+            .section-img-info{
+                font-size: 16px;
+                color: #666;
+                display:flex;
+                justify-content:center;
+            }
+        </style>
+        <div class="section-img-title">
+            划线生成书签
+        </div>
+        <div class="section-img-info">
+            一键记录阅读的感受与情感，自动配图，点击切换配图，还能编辑和评论，书写自己的灵感。
+        </div>
+        <div class="img-box">
+            <img class="reader-img" src="./images/reader1.png" alt="">
+            <img class="reader-img" src="./images/reader2.png" alt="">
+            <img class="reader-img" src="./images/reader3.png" alt="">
+        </div>
+    </section>
+    <section class="section-flomo">
+        <style>
+            .left{
+                width: 60%;
+            }
+            .right{
+                /* background: #fff; */
+            }
+            .flomo-img{
+                width: 100%;
+            }
+            .flomo-title{
+                display:flex;
+                justify-content:center;
+                font-size: 36px;
+                margin:30px 0;
+            }
+            .flomo-info{
+                font-size: 16px;
+                color: #666;
+                display:flex;
+                justify-content:center;
+                line-height:2;
+            }
+
+        </style>
+        <div class="left">
+            <img class="flomo-img"src="./images/flomo.png" alt="">
+        </div>
+        <div class="right">
+            <div class="flomo-title">划线、笔记，自动同步flomo</div>
+            <div class="flomo-info">
+                在我们阅读批准的过程中，可以开启自动同步功能。
+                <br/>
+                所有的划线、笔记，都可以实时同步到flomo。
+                <br/>
+                自动按照笔记的书名进行分类，还能记录批注的时间，方便查找。
+                <br/>
+                一切都是为了更好的阅读和笔记体验。
+            </div>
+            <div class="flomo-title"></div>
+        </div>
+    </section>
+    <section class="section-footer">
+        <style>
+            .footer{
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                flex-direction: column;
+                padding:20px;
+                width: 100%;
+            }
+        </style>
+        <div class="footer">
+            <p>飞书、notion等更多第三方笔记同步，支持支持中。</p>
+            <p>切换字体功能正在支持中。</p>
+            
+        </div>
+    </section>
+</body>
+</html>
