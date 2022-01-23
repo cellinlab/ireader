@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>i微信读书——最好用的微信读书插件</title>
+    <title>i微信读书 | 最好用的微信读书插件</title>
+    <meta name="keywords" content="reader,weread,wechat,微信读书助手,flomo助手,i微信读书,微信读书,微信读书插件,导出笔记">
+    <meta name="description" content="最好用的微信读书插件 | 划线生成书签，一键同步flomo、飞书、notion等第三方，导出笔记，右键复制图片">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <script type="module" >
         import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
@@ -95,7 +98,6 @@
             background-color:rgb(244, 245, 249);
             height:460px;
             
-            
         }
         .section-img{
             display: block;
@@ -109,13 +111,13 @@
             min-height:200px;
         }
         .section-banner .left{
-            width: 40%;
-            margin: 30px 40px;
+            width: 45%;
+            margin: 30px 60px;
             
         }
         .section-banner .right{
             background:#888;
-            width: 60%;
+            width: 55%;
         }
     </style>
 </head>
@@ -154,7 +156,7 @@
             </div>
             <div class="download-box">
                 <a target="_blank" href="https://chrome.google.com/webstore/detail/i%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6/feicgfcihlfhjjepgibmbieodedbggjh?hl=zh-CN" class="button">应用商店下载</a>
-                <a target="_blank" href="" class="button">下载安装包</a>
+                <a target="_blank" href="./chrome/ireader.crx" class="button">下载安装包</a>
             </div>
         </div>
         <div class="right">
@@ -215,6 +217,12 @@
                 width: 300px;
                 box-shadow: rgb(17 17 26 / 5%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px 8px 32px;
                 margin: 30px 30px;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+            .reader-img:hover{
+                transform: scale(1.03);
+                box-shadow: rgb(17 17 26 / 8%) 0px 4px 16px, rgb(17 17 26 / 8%) 0px 8px 32px;
             }
             .section-img-title{
                 display:flex;
@@ -272,7 +280,7 @@
         <div class="right">
             <div class="flomo-title">划线、笔记，自动同步flomo</div>
             <div class="flomo-info">
-                在我们阅读批准的过程中，可以开启自动同步功能。
+                在我们阅读批注的过程中，可以开启自动同步功能。
                 <br/>
                 所有的划线、笔记，都可以实时同步到flomo。
                 <br/>
