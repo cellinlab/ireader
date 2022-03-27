@@ -113,6 +113,7 @@
         
         .section-footer{
             min-height:200px;
+            background: #f9f9f9;
         }
         
     </style>
@@ -188,7 +189,7 @@
             </div>
             <div class="info">
                 支持划线生成图片书签、划线同步笔记到第三方、
-                一键导出笔记、更换主题、代码块高亮、查看阅读进度等。
+                一键导出笔记、更换主题、代码块高亮、更换字体、查看阅读进度等。
             </div>
             <div class="download-box">
                 <a target="_blank" href="https://chrome.google.com/webstore/detail/i%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6/feicgfcihlfhjjepgibmbieodedbggjh?hl=zh-CN" class="button">应用商店下载</a>
@@ -229,6 +230,12 @@
                     </div>
                     <div class="swiper-slide">
                         <img src="./images/5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/7.png" alt="">
                     </div>
                 </div>
                 <!-- If we need pagination -->
@@ -301,7 +308,7 @@
                     flex-direction: column-reverse;
                 }
                 .left{
-                    width: auto;
+                    width: 100%;
                 }
                 
             }   
@@ -346,13 +353,73 @@
             <div class="flomo-info">
                 在我们阅读批注的过程中，可以开启自动同步功能。
                 <br/>
-                所有的划线、笔记，都可以实时同步到flomo。
+                所有的划线、笔记，都可以实时同步到<a href="https://flomoapp.com/" target="_blank" style="display:contents;">flomo</a>。
                 <br/>
                 自动按照笔记的书名进行分类，还能记录批注的时间，方便查找。
                 <br/>
                 一切都是为了更好的阅读和笔记体验。
             </div>
-            <div class="flomo-title"></div>
+        </div>
+    </section>
+    <section class="section-readwise">
+        <style>
+            @media (max-width: 700px) {
+                .section-readwise{
+                    background-color:#fafafa;
+                    padding: 20px 0;
+                    flex-direction: column;
+                }
+                .readwise-right,.readwise-left{
+                    width: 100%;
+                }
+                
+            }   
+            @media (min-width: 700px) {
+                .section-flomo{
+                    background-color:#fafafa;
+                    padding: 20px 0;
+                }
+                .readwise-right{
+                    width: 60%;
+                }
+            } 
+
+            
+            .readwise-img{
+                padding: 20px 0;
+                width: 100%;
+            }
+            .flomo-title{
+                display:flex;
+                justify-content:center;
+                font-size: var(--title-font-size);
+                margin:30px 0;
+            }
+            .flomo-info{
+                font-size: 16px;
+                color: #666;
+                display:flex;
+                justify-content:center;
+                line-height:2;
+                padding:0 20px;
+            }
+
+        </style>
+        <div class="left readwise-left">
+            <div class="flomo-title">一键同步全书笔记到readwise</div>
+            <div class="flomo-info">
+                <a href="https://readwise.io/" target="_blank" style="display:contents;">readwise</a> 
+                是一款专注于管理读书笔记的软件。
+                <br/>
+                可以随时回顾笔记、为笔记添加标签、检索笔记等。
+                <br/>
+                很多软件都支持了一键导入、导出到readwise。
+                <br/>
+                微信读书不支持，我们就帮他支持。
+            </div>
+        </div>
+        <div class="right readwise-right">
+            <img class="readwise-img"src="./images/6.png" alt=""/>
         </div>
     </section>
     <section class="section-footer">
@@ -373,7 +440,6 @@
                 }
             </style>
             <p>飞书、notion等更多第三方笔记同步，正在支持中。</p>
-            <p>切换字体功能正在支持中。</p>
             <p>友情链接：<a href="https://curl.qcloud.com/92ixxSWq" target="_blank" >腾讯云服务器2核4G 74/年</a> | <a href="https://job.toutiao.com/s/LWMemQ6" target="_blank">字节跳动内推投递</a></p>
             
         </div>
